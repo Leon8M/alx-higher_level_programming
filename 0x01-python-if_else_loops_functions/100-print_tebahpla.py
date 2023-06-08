@@ -7,4 +7,4 @@ for i in range(ord('z'), ord('a') - 1, -1):
         num = letter.lower()
     else:
         num = letter.upper()
-    print(num, end='')
+    print("{}".format(num), end='')
