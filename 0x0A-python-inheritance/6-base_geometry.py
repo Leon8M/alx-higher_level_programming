@@ -5,9 +5,18 @@ Module containing BaseGeometry class
 
 
 class BaseGeometry:
+    """
+    BaseGeometry class.
+    """
+
     def area(self):
         """
-        Raises Exception
-        :return: Exception
+        Area method.
+
+        Raises:
+            Exception: If area() is not implemented.
+
+        Returns:
+            None
         """
         raise Exception("area() is not implemented")
