@@ -11,19 +11,30 @@ class BaseGeometry:
 
     def area(self):
         """
-        Raises Exception
-        :return: Exception
+        Area method.
+
+        Raises:
+            Exception: If area() is not implemented.
+
+        Returns:
+            None
         """
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
         """
-        validates value
-        :param name: name
-        :param value: value
-        :return: nothing
-        :raises: TypeError if value is not int
-                 ValueError if value less or equal to zero.
+        Integer validator method.
+
+        Args:
+            name (str): The name of the value.
+            value (int): The value to validate.
+
+        Raises:
+            TypeError: If value is not an integer.
+            ValueError: If value is less than or equal to zero.
+
+        Returns:
+            None
         """
         if not isinstance(value, int):
             raise TypeError("{} must be an integer".format(name))
