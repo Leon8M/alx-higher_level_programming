@@ -5,6 +5,10 @@ Module containing BaseGeometry class
 
 
 class BaseGeometry:
+    """
+    BaseGeometry class.
+    """
+
     def area(self):
         """
         Raises Exception
